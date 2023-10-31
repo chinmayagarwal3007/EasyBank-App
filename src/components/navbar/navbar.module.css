@@ -1,0 +1,152 @@
+.container{
+    font-family: 'Public Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin : 10px;
+    position: relative; /* Ensure relative positioning for containing the links */
+    height: 60px;
+    margin-left: 18px;
+}
+
+.underline {
+    padding: 0 10px; /* Add padding between links */
+    display: inline-block;
+    line-height: 60px; /* Vertically center text within the navbar */
+    position: relative; /* Ensure relative positioning for the links */
+  }
+  
+  .underline:hover {
+    border-bottom: 2px solid hsl(136, 65%, 51%); /* Add the underline on hover */
+  }
+
+
+
+
+.hamburger{
+    display: none;
+}
+
+.image{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 100px;
+}
+
+.link{
+    color: hsl(233, 8%, 62%);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.btn{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsiveMenu{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 220px;
+    height: 220px;
+    color: black;
+    top: 60px;
+    left: 25%;
+    z-index: 2;
+    background-color: white;
+}
+
+.responsiveLink:hover{
+    text-decoration: underline;
+}
+
+/* Styles for small mobile devices */
+@media (max-width: 480px) {
+    .hamburger{
+        cursor: pointer;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .links{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .logo{
+        margin-left: 1%;
+        height: 13.33px;
+        width: 92.66px;
+    }
+    .link{
+        color: black;
+    }
+}
+
+/* Styles for standard mobile devices */
+@media (min-width: 481px) and (max-width: 764px) {
+    .hamburger{
+        cursor: pointer;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .links{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .logo{
+        margin-left: 2%;
+        height: 16.666px;
+        width: 115.833px;
+    }
+    .responsiveMenu{
+        left:35%
+    }
+    .linck{
+        color: black;
+    }
+}
+
+/* Styles for small tablets */
+@media (min-width: 764px) and (max-width: 1024px) {
+    .btn{
+        display: none;
+    }
+    .logo{
+        margin-left: 2%;
+        height: 16.666px;
+        width: 115.833px;
+    }
+
+    .image{
+        flex: '9/5';
+    }
+    .links{
+        margin-right: 2%;
+    }
+}

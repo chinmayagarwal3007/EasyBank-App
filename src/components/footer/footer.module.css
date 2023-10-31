@@ -1,0 +1,101 @@
+.container{
+    background-color: hsl(233, 26%, 24%);
+    margin-top: 100px;
+    height: 200px;
+    padding-right: 8px;
+    font-family: 'Public Sans', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+.linkContent{
+    text-decoration: none;
+    color: white;
+}
+
+.linkContent:hover{
+    color: hsl(136, 65%, 51%);
+}
+
+
+
+.linkOne{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.linkTwo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.lastPart{
+    display: flex;
+    flex-direction: column;
+}
+
+.copyRight{
+    color: hsl(233, 8%, 62%);
+}
+
+@media (min-width: 100px) and (max-width: 540px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }  
+    .links{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    } 
+    .lastPart{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .linkOne{
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .linkTwo{
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .icons{
+        margin-top: 20px;
+        gap: 20px;
+    }
+}

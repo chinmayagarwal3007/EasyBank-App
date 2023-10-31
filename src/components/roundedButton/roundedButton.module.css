@@ -1,0 +1,16 @@
+.roundedButton {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border: none;
+    border-radius: 50px; /* Adjust the border-radius for the degree of roundness you want */
+    cursor: pointer;
+}
+
+.roundedButton:hover{
+    opacity: 0.8;
+}
